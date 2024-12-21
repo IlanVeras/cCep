@@ -1,0 +1,124 @@
+.container{
+    background: rgba(90, 0, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(246, 241, 255, 0.705);
+    width: 50%;
+    height: 210px;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    padding: 1rem;
+    border-radius: 10px 0px;
+    font-family: "Roboto", serif;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+}
+
+.inputBtn{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputCep{
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.inputCep:hover{
+    color: white; /* Roxo escuro */
+    text-shadow: 0 0 5px #8A2BE2, 0 0 10px #8A2BE2, 0 0 20px #8A2BE2;
+}
+
+.btn{
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(167, 4, 167);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(99, 1, 99);
+    color: whitesmoke;
+}
+
+
+.information{
+    width: 100%;
+    text-align: initial;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+
+.erro{
+    width: 100%;
+    text-align: initial;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.loading{
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    border-right-color: transparent;
+    animation: loading 1s infinite;
+    margin: auto;
+}
+  
+@keyframes loading{
+    to{
+      transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 90%;
+    }
+    .inputBtn{
+        margin: auto;
+        display: flex;
+    }
+
+    .btn{
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .inputCep{
+        border: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container{
+        width: 30%;
+    }
+}
